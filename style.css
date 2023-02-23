@@ -1,0 +1,9 @@
+header, footer {
+    background-color: #1F2937;
+
+    width: 100%;
+}
+
+header {
+    display: flex;
+}
