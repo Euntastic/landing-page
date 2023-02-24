@@ -1,35 +1,148 @@
-/* Colors and Font Styles
-Dark Background Color (hero and footer)
-#1F2937
-
-Hero Main Text ("This website is awesome")
-48px extra-bold #F9FAF8
-
-Hero Secondary Text, Header Link Text
-18px #E5E7EB
-
-Header Logo Text
-24px #F9FAF8
-
-Button color, call to action background color
-#3882F6
-
-Information Header Text
-36px extra-bold #1f2937
-
-Quote section background color
-#E5E7EB
-
-Quote Text
-36px light italic #1F2937
-*/
-
-header, footer {
-    background-color: #1F2937;
-
-    width: 100%;
+:root {
+  --white-txt: #f9faf8;
+  --grey-txt: #e5e7eb;
+  --dark-txt: #1f2937;
+  --dark-bg: #1f2937;
+  --grey-bg: #e5e7eb;
+  --dark-grey-bg: #6d737d;
+  --button-clr: #3882f6;
 }
 
-header {
-    display: flex;
+* {
+  font-family: Roboto;
+  margin: 0;
+}
+
+header,
+footer {
+  background-color: var(--dark-bg);
+  color: var(--white-txt);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+
+  height: 5vh;
+  width: 100vw;
+}
+
+button {
+  background-color: var(--button-clr);
+  border: 1px solid var(--button-clr);
+  border-radius: 0.25rem;
+  color: var(--grey-txt);
+  width: 100px;
+}
+
+
+#header_left {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 60vw;
+}
+
+#header_right {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40vw;
+}
+
+#header_right > div {
+  padding: 1em;
+}
+
+#hero_left,
+#hero_right {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero_left {
+  padding-right: 3vw;
+}
+
+#hero_left > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#hero_right {
+  background-color: var(--dark-grey-bg);
+}
+
+#hero_left_title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+#hero_left_subtext {
+  font-size: 1rem;
+  color: var(--grey-txt);
+}
+
+.sub_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 70vw;
+  margin: auto;
+}
+
+#header_container {
+  height: 5vh;
+}
+
+#hero_container {
+  background-color: var(--dark-bg);
+  color: var(--white-txt);
+  width: 100vw;
+}
+
+#hero_container,
+#img_container {
+  height: 20vh;
+  padding: 4vh 0;
+}
+
+#img_container_title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+#img_container > .sub_container {
+  justify-content: space-evenly;
+}
+
+.img_card {
+  width: 150px;
+}
+
+.img_card > div {
+  width: 150px;
+  height: 150px;
+  border: 0.2rem solid var(--button-clr);
+  border-radius: 1rem;
+  margin: 0;
+}
+
+.img_card > p {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.2em;
 }

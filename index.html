@@ -5,21 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet">  
   </head>
   <body>
-        <header>
-          <div id="header_container">
-              <div>Header Logo</div>
-              <div>
-                <div>header link one</div>
-                <div>header link two</div>
-                <div>header link three</div>
-              </div>
+    <header>
+      <div id="header_container">
+        <div class="sub_container">
+          <div id="header_left">Header Logo</div>
+          <div id="header_right">
+            <div>header link one</div>
+            <div>header link two</div>
+            <div>header link three</div>
           </div>
-        </header>
-        <main></main>
-        <footer>Copyright <span>&#169;</span></footer>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="hero_container">
+        <div class="sub_container">
+          <div id="hero_left">
+            <div>
+              <p id="hero_left_title">This website is awesome</p>
+              <p id="hero_left_subtext">
+                This website has some subtext that goes here under the main title.
+                It's a smaller font and the color is lower contrast.
+              </p>
+              <button>Sign up</button>
+            </div>
+          </div>
+          <div id="hero_right">this is a placeholder for an image</div>
+        </div>
+      </div>
+      <div id="img_container">
+        <p id="img_container_title">Some Random Information!</p>
+        <div class="sub_container">
+          <div class="img_card">
+            <div></div><p>this is some subtext under an illustration or image</p>
+          </div>
+          <div class="img_card">
+            <div></div><p>this is some subtext under an illustration or image</p>
+          </div>
+          <div class="img_card">
+            <div></div><p>this is some subtext under an illustration or image</p>
+          </div>
+          <div class="img_card">
+            <div></div><p>this is some subtext under an illustration or image</p>
+          </div>
+        </div>
+      </div>
+      <div>
+
+      </div>
+    </main>
+    <footer>
+      <div id="footer_text">Copyright <span>&#169;</span> The Odin Project 2023</div>
+    </footer>
   </body>
 </html>
